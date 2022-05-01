@@ -2,10 +2,13 @@ Package: DiffCorr
 Type: Package
 Title: Analyzing and Visualizing Differential Correlation Networks in
         Biological Data
-Version: 0.4.1
-Date: 2015-03-31
-Author: Atsushi Fukushima, Kozo Nishida
-Maintainer: Atsushi Fukushima <atsushi.fukushima@riken.jp>
+Version: 0.4.2
+Date: 2022-04-29
+Authors@R: c(person("Atsushi", "Fukushima", role = c("aut", "cre"),
+                    email = "afukushima@gmail.com"),
+              person("Kozo", "Nishida", role = "aut",
+                    email = "kozo.nishida@gmail.com"))
+Maintainer: Atsushi Fukushima <afukushima@gmail.com>
 Depends: pcaMethods, igraph, fdrtool, multtest
 Description: A method for identifying pattern changes between 2 experimental
          conditions in correlation networks (e.g., gene co-expression networks),
@@ -16,7 +19,10 @@ Description: A method for identifying pattern changes between 2 experimental
          relationship among variables (e.g., genes and metabolites) between 2
          experimental conditions. 
 License: GPL (> 3)
-Packaged: 2015-03-31 08:49:09 UTC; fuku
+Packaged: 2022-04-30 01:29:34 UTC; hoge
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2015-04-02 00:07:09
+Date/Publication: 2022-05-01 15:20:13 UTC
+RoxygenNote: 7.1.2
+Author: Atsushi Fukushima [aut, cre],
+  Kozo Nishida [aut]
