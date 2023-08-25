@@ -2,8 +2,8 @@ Package: DiffCorr
 Type: Package
 Title: Analyzing and Visualizing Differential Correlation Networks in
         Biological Data
-Version: 0.4.2
-Date: 2022-04-29
+Version: 0.4.3
+Date: 2023-08-20
 Authors@R: c(person("Atsushi", "Fukushima", role = c("aut", "cre"),
                     email = "afukushima@gmail.com"),
               person("Kozo", "Nishida", role = "aut",
@@ -19,10 +19,10 @@ Description: A method for identifying pattern changes between 2 experimental
          relationship among variables (e.g., genes and metabolites) between 2
          experimental conditions. 
 License: GPL (> 3)
-Packaged: 2022-04-30 01:29:34 UTC; hoge
+Packaged: 2023-08-25 01:05:11 UTC; fuku
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2022-05-01 15:20:13 UTC
-RoxygenNote: 7.1.2
+Date/Publication: 2023-08-25 09:40:06 UTC
+RoxygenNote: 7.2.3
 Author: Atsushi Fukushima [aut, cre],
   Kozo Nishida [aut]

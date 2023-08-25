@@ -1,13 +1,14 @@
-5c462140ac92c3bc2d670f11b611c2f7 *DESCRIPTION
+1120bed76af13d8d0930c07188584624 *DESCRIPTION
 74732b6416ee8588e14af71ca52c3627 *NAMESPACE
-72badb82a80dc37fbc2dcb9a0be33b9b *R/DiffCorr.R
+12bffe12664464288186ecb99688ba43 *R/DiffCorr-package.R
+46e559254bb9649bd4ef298c0832fa55 *R/DiffCorr.R
 48ecf8de98a6f9d59dddcfb0430b443c *R/data.R
 7651209705f0064940c9474a6efd8408 *README.md
 d755eab7fc02a635a2df19b9cd497bae *data/AraMetLeaves.RData
 f7e67c23fe48df103000b02179444d1a *data/AraMetRoots.RData
 96b52018d33498b2ec2e84f9b1bef0c2 *man/AraMetLeaves.Rd
 f7e0463b787254910ccd6ca9aa5deda2 *man/AraMetRoots.Rd
-9b1c3c3b6fded07d94c0dbd25113c139 *man/DiffCorr.Rd
+b5d9b29573b7e9198b7f1ffc260f9866 *man/DiffCorr-package.Rd
 d44443dae93105f3385ef13c990c9796 *man/cluster.molecule.Rd
 c73c1ce7a43bb5f2a7bb7577b8a1e06b *man/comp.2.cc.fdr.Rd
 57393395ad03429bf9c1ce25ba58cb16 *man/compcorr.Rd
