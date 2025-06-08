@@ -5,25 +5,24 @@ knitr::opts_chunk$set(
 )
 
 ## ----installation from CRAN, eval = FALSE-------------------------------------
-#  install.packages("DiffCorr")
+# install.packages("DiffCorr")
 
 ## ----installation from GitHub, eval = FALSE-----------------------------------
-#  install.packages("devtools")
-#  install.packages(c("igraph", "fdrtool"))
-#  
-#  if (!requireNamespace("BiocManager", quietly = TRUE))
-#      install.packages("BiocManager")
-#  BiocManager::install(c("pcaMethods", "multtest"))
-#  
-#  library(devtools)
-#  install_github("afukushima/DiffCorr")
+# install.packages("devtools")
+# install.packages(c("igraph", "fdrtool"))
+# 
+# if (!requireNamespace("BiocManager", quietly = TRUE))
+#     install.packages("BiocManager")
+# BiocManager::install(c("pcaMethods", "multtest"))
+# 
+# library(devtools)
+# install_github("afukushima/DiffCorr")
 
 ## ----setup, message = FALSE---------------------------------------------------
 library(DiffCorr)
 
 ## ----Golub dataset------------------------------------------------------------
-golub.df <- read.table("https://coxpress.sourceforge.net/golub.txt", 
-                       sep = "\t", header = TRUE, row.names = 1)
+data(golub.df)
 dim(golub.df)
 
 ## ----clustering---------------------------------------------------------------
@@ -45,8 +44,8 @@ gg2 <- get.eigen.molecule.graph(res2)
 plot(gg2, layout = layout.fruchterman.reingold(gg2))
 
 ## ----writing, eval = FALSE----------------------------------------------------
-#  write.modules(g1, res1, outfile = "module1_list.txt")
-#  write.modules(g2, res2, outfile = "module2_list.txt")
+# write.modules(g1, res1, outfile = "module1_list.txt")
+# write.modules(g2, res2, outfile = "module2_list.txt")
 
 ## ----examination--------------------------------------------------------------
 for (i in 1:length(res1$eigen.molecules)) {
@@ -69,7 +68,7 @@ plotDiffCorrGroup(golub.df, g1, g2, 21, 24, 1:27, 28:38,
                     ylim=c(-5,5))
 
 ## ----export, eval = FALSE-----------------------------------------------------
-#  comp.2.cc.fdr(output.file = "res.txt", golub.df[, 1:27], golub.df[, 28:38], threshold = 0.05, save = TRUE)
+# comp.2.cc.fdr(output.file = "res.txt", golub.df[, 1:27], golub.df[, 28:38], threshold = 0.05, save = TRUE)
 
 ## ----data---------------------------------------------------------------------
 data(AraMetLeaves)
@@ -80,10 +79,10 @@ colnames(AraMetLeaves)
 ?AraMetLeaves
 
 ## ----DiffCorr for AraMetLeaves, eval = FALSE----------------------------------
-#  comp.2.cc.fdr(output.file = "Met_DiffCorr_res.txt",
-#                log10(AraMetLeaves[, 1:17]),   ## Col-0 (17 samples)
-#                log10(AraMetLeaves[, 18:37]),  ## tt4 (20 samples)
-#                method = "pearson",
-#                threshold = 1.0, save = TRUE)
-#  
+# comp.2.cc.fdr(output.file = "Met_DiffCorr_res.txt",
+#               log10(AraMetLeaves[, 1:17]),   ## Col-0 (17 samples)
+#               log10(AraMetLeaves[, 18:37]),  ## tt4 (20 samples)
+#               method = "pearson",
+#               threshold = 1.0, save = TRUE)
+# 
 

@@ -1,7 +1,7 @@
 ---
 title: 'DiffCorr: Analyzing and Visualizing Differential Correlation Networks in Transcriptomic and Metabolomic Data'
 author:
-- affiliation: Kyoto Prefectural University/RIKEN Center for Sustainable Resource Science
+- affiliation: Kyoto Prefectural University/RIKEN
   email: afukushima@gmail.com
   name: Atsushi Fukushima
 date: "`r Sys.Date()`"
@@ -76,8 +76,7 @@ This section was created from [Additional File 3](https://sourceforge.net/projec
 ## Reading the Golub dataset
 
 ```{r Golub dataset}
-golub.df <- read.table("https://coxpress.sourceforge.net/golub.txt", 
-                       sep = "\t", header = TRUE, row.names = 1)
+data(golub.df)
 dim(golub.df)
 ```
 
